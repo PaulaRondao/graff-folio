@@ -1,0 +1,159 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 18px;
+  line-height: 27px;
+  overflow-x: hidden;
+}
+
+body {
+  max-width: 1920px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Verdana, Arial', sans-serif;
+  color: #EDE8E3;
+  background-color: #1E1E1E;
+  overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+span,
+a {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+}
+
+h1 {
+  font-size: 2.986rem;
+  font-weight: 700;
+  line-height: 2.4rem;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+}
+
+h2 {
+  font-size: 2.488rem;
+  font-weight: 700;
+  line-height: 2.625rem;
+  text-transform: uppercase;
+
+  & span {
+    font-size: 1.438rem;
+    font-weight: 400;
+    line-height: 2.156rem;
+    text-transform: lowercase;
+  }
+}
+
+h3 {
+  font-size: 2.074rem;
+  font-weight: 700;
+  line-height: 2.625rem;
+  text-transform: uppercase;
+}
+
+p {
+  font-size: 1.125rem;
+  font-weight: 400;
+  line-height: 1.688rem;
+}
+
+a {
+  text-decoration: none;
+  line-height: 1.5rem;
+  color: #EDE8E3;
+}
+
+ul {
+  list-style-type: none;
+}
+
+img {
+  -webkit-transform: scale(1);
+  /* Préfixe pour Chrome, Safari */
+  -moz-transform: scale(1);
+  /* Préfixe pour Firefox */
+  -ms-transform: scale(1);
+  /* Préfixe pour IE */
+  transform: scale(1);
+  /* Propriété standard */
+}
+
+.container {
+  padding: 0px 12px;
+}
+
+/* footer */
+
+footer {
+  background-color: #EDE8E3;
+  color: #1E1E1E;
+  font-size: 1rem;
+  letter-spacing: 0.00938em;
+}
+
+footer a {
+  color: #1E1E1E;
+}
+
+.contentInfo {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: auto;
+  padding-top: 20px;
+}
+
+.contentInfo .contact {
+  display: flex;
+  min-width: 300px;
+}
+
+.contentInfo .contact .content {
+  text-align: center;
+}
+
+.contentInfo .contact .content .follow__link {
+  display: flex;
+  -moz-box-pack: center;
+  -moz-box-align: center;
+  margin-bottom: 40px;
+  min-width: 300px;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+  font-size: 15px;
+}
+
+.contentInfo .content__info {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  /* margin: auto; */
+  font-size: medium;
+  font-weight: 400;
+  padding: 10px 0;
+}
+
+.contentInfo .content__info li {
+  padding: 4px 0;
+}
+
+.contentInfo .content__info a {
+  text-decoration: underline;
+}
+
+.contentInfo .content__info p {
+  font-size: 14px;
+  text-align: right;
+}

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Thibault Lemaire, artiste graffeur passionné
+  </title>
+  <meta name="description" content="Thibault Lemaire, artiste graffeur passionné">
+  <meta name="author" content="Thibault Lemaire">
+  <meta property="og:title" content="Thibault Lemaire, artiste graffeur passionné">
+  <meta property="og:description" content="Thibault Lemaire, artiste graffeur passionné">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="">
+  <link rel="icon" type="image/x-icon" href="">
+  <link rel="stylesheet" href="css/global-styles.css">
+  <link rel="stylesheet" href="css/navbar.css">
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+  <header role="banner">
+    <div class="container">
+      <nav role="navigation">
+        <button id="button" onclick="collapse()" aria-expanded="false">
+          <div alt="Menu de navigation">
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </div>
+          <img src="assets/icons/close.svg" alt="Fermer le menu de navigation" />
+        </button>
+        <div class="nav__menu">
+          <ul>
+            <li class="nav__menu__link"><a href="#home">ACCUEIL</a></li>
+            <li class="nav__menu__link"><a href="#portfolio">PORTFOLIO</a></li>
+            <li class="nav__menu__link"><a href="#projects">PROJETS</a></li>
+            <li class="nav__menu__link"><a href="#exposition">EXPOSITIONS / PRESS</a></li>
+            <li class="nav__menu__link"><a href="#festival">FESTIVALS</a></li>
+            <li class="nav__menu__link"><a href="#about">À PROPOS</a></li>
+            <li class="nav__menu__link"><a href="#contact">CONTACT</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <main role="main">
+    <section class="home__section presentation">
+      <div class="container header">
+        <h1>Thibault Lemaire</h1>
+        <img>
+      </div>
+      <div class="container presentation">
+        <div>
+          <h2>Artiste / Graffeur</h2>
+          <p>Originaire de Saintes cet artiste autodidacte pratique le graffiti depuis 2003, féru du travail des lettres
+            il les compose, les déstructure et fait naître des compositions variées et toujours hautement colorées. Il
+            s’est
+            diversifié au fil des années pour y intégrer divers éléments comme du décor ou des personnages issus de la
+            nature qui l’entoure ou des séries qui ont bercés sont enfance...</p>
+        </div>
+        <button>En savoir plus sur moi</button>
+      </div>
+      <div class="container masonery">
+        <div>
+          <img>
+          <div>
+            <h3>Projets</h3>
+            <p>Lorem ipsum dolor sit amet consectetur. Rhoncus vestibulum duis nulla lacus. Turpis id amet egestas
+              aliquam elementum gravida phasellus nibh feugiat. </p>
+            <button>Voir plus</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="home__section testimonies">
+      <div class="container">
+        <p>Clients</p>
+      </div>
+    </section>
+    <section class="home__section contact-me">
+      <div class="container">
+        <p>Une idée, un projet, une bière</p>
+        <p>Sur Saintes....</p>
+        <button>
+          Contactez-moi
+        </button>
+      </div>
+    </section>
+  </main>
+  <footer role="contentinfo">
+    <div class="container contentInfo">
+      <div class="contact">
+        <img class="logo-Easy" src="assets/img/logo/EASY.svg" alt="" width="36" height="34">
+        <div class="content">
+          <a class="follow__link">
+            suivez-moi sur
+            <img class="icon-insta" src="assets/img/logo/instagram.svg" alt="" width="36" height="34">
+          </a>
+        </div>
+      </div>
+      <ul class="content__info">
+        <li>
+          <a href="">Plan du site</a>
+        </li>
+        <li>
+          <a href="">Mentions Légales</a>
+        </li>
+        <li>
+          <p>© 2025 - Paula Rondao</p>
+        </li>
+      </ul>
+    </div>
+  </footer>
+</body>
+<script type="text/javascript">
+  function shuffleArray(array) {
+    for (let i = array.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [array[i], array[j]] = [array[j], array[i]];
+    }
+  }
+
+  document.addEventListener("DOMContentLoaded", function () {
+    const logos = Array.from(document.querySelectorAll('.scoop-logo'));
+    shuffleArray(logos);
+
+    const list = document.querySelector('.cooperatives-list');
+    logos.forEach(logo => {
+      list.appendChild(logo);
+    });
+  });
+</script>
+
+</html>
