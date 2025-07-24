@@ -19,20 +19,20 @@
   <script src="script.js" defer></script>
 </head>
 
-<body>
+<body class="no-scroll">
   <header role="banner">
     <div class="site-header">
       <div class="site-header-container">
         <button id="burger-button" aria-expanded="false" onclick="collapse()">
           <img class="navigation-image icon-burger menu-collapsed" src="assets/icons/menu-burger.svg" width="36px"
-            height="36px">
+            height="36px" alt="Menu de navigation">
           <img class="navigation-image icon-close menu-collapsed" src="assets/icons/close.svg" width="36px"
-            height="36px">
+            height="36px" alt="Fermer le menu de navigation">
         </button>
-        <nav role="navigation" id="menu" class="menu-collapsed">
+        <nav role="navigation" id="menu" class="menu-collapsed" aria-label="navigation principale">
           <div class="header-menu">
             <ul>
-              <li><a href="home">ACCUEIL</a></li>
+              <li><a href="index.html" aria-current="page">ACCUEIL</a></li>
               <li><a href="portfolio.html">PORTFOLIO</a></li>
               <li><a href="#exposition">EXPOSITIONS / PRESS</a></li>
               <li><a href="#festival">FESTIVALS</a></li>
