@@ -1,134 +1,136 @@
-.container {
-  max-width: 98rem;
-  margin: 0 auto;
-  padding: 0 2rem;
+header {
+  width: 100%;
+  box-sizing: border-box;
+  flex-shrink: 0;
   position: relative;
 }
 
-.bar {
-  display: block;
-  width: 25px;
-  height: 3px;
-  margin: 5px auto;
-  -webkit-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
-  background-color: #EDE8E3;
+.site-header {
+  width: 100%;
+  height: 100%;
+  padding: 2rem 0;
 }
 
-.nav {
-  height: 3.2rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  color: #fff;
+.site-header-container {
+  max-width: 98rem;
+  margin: 0 auto;
+  padding: 0 2rem;
 }
 
-.nav__logo {
-  font-size: 1.5rem;
-  margin: auto 1rem;
+.no-scroll {
+  overflow: hidden;
 }
 
-.nav__menu ul {
-  margin: 0;
-  padding: 0;
-  display: flex;
-}
-
-.nav__menu ul li {
-  list-style: none;
-}
-
-.nav__menu ul li a {
-  text-decoration: none;
-  color: #fff;
-  padding: 1rem;
-  display: block;
-  font-size: 1rem;
-}
-
-.nav__menu li:hover {
-  background-color: rgba(255, 255, 255, 0.5);
-}
-
-.nav__hamburger {
-  width: 1.875rem;
-  height: 1.313rem;
-  display: none;
-  flex-direction: column;
-  justify-content: space-around;
-  position: absolute;
+#burger-button {
+  position: fixed;
   top: 1rem;
   right: 1rem;
+  z-index: 2000;
+  padding: 0;
 }
 
-.nav__hamburger__line {
-  height: 0.188rem;
-  width: 100%;
-  background-color: #fff;
-  border-radius: 0.625rem;
-  transition: all ease-in-out 0.2s;
+/* --- STYLE DU MENU --- */
+#menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.95);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  opacity: 1;
+  visibility: visible;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
 }
 
-/* MEDIA QUERIES */
+#menu.menu-collapsed {
+  opacity: 0;
+  visibility: hidden;
+}
 
-@media screen and (max-width: 1065px) {
-  .container {
+#menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+
+#menu .header-menu li {
+  margin: 1.5rem 0;
+}
+
+#menu .header-menu li:hover {
+  background-color: #EDE8E3;
+  color: #1E1E1E;
+  border-radius: 5px;
+}
+
+#menu .header-menu a {
+  color: inherit;
+  font-size: 1rem;
+  display: inline-block;
+  padding: 0.5rem;
+}
+
+/* --- CACHER/AFICHER ICONES --- */
+.icon-burger {
+  display: none;
+}
+
+.icon-close {
+  display: none;
+}
+
+/* Quand menu est fermé → burger visible, close caché */
+.icon-burger.menu-collapsed {
+  display: block;
+}
+
+.icon-close.menu-collapsed {
+  display: none;
+}
+
+/* Quand menu est ouvert (plus de .menu-collapsed) → close visible */
+.icon-burger:not(.menu-collapsed) {
+  display: none;
+}
+
+.icon-close:not(.menu-collapsed) {
+  display: block;
+}
+
+/* --- VERSION DESKTOP --- */
+@media screen and (min-width: 1172px) {
+  #burger-button {
+    display: none;
+  }
+
+  #menu {
+    position: static;
+    opacity: 1 !important;
+    visibility: visible !important;
+    height: auto;
+    background: none;
+    display: block;
+  }
+
+  #menu ul {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    font-weight: 600;
+    justify-content: center;
+    gap: 2rem;
+    border: 1px solid;
+    border-radius: 5px;
+    border-color: #EDE8E3;
+    width: fit-content;
+    margin: 0 auto;
+    padding: 0.2rem;
   }
 
-  .nav__hamburger {
-    display: flex;
+  #menu .header-menu li {
+    margin: 0;
   }
 
-  .nav__menu {
-    position: absolute;
-    display: flex;
-    align-items: center;
-    background-color: rgba(255, 255, 255, 0.2);
-    top: -10rem;
-    width: 100%;
-    transition: all ease-in-out 0.4s;
-  }
-
-  .nav {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  .nav__menu ul {
-    flex-direction: column;
-    width: 100%;
-    padding: 3rem 0 0.6rem;
-  }
-
-  .nav__menu ul li {
-    text-align: center;
-  }
-
-  .nav__menu ul li a {
-    padding: 0.5rem;
-  }
-
-  .nav__menu {
-    z-index: -1;
-  }
-
-  .nav__menu.active {
-    top: 0;
-  }
-
-  .nav__hamburger.active :nth-child(1) {
-    transform: rotate(45deg) translate(0.45rem, 0.1875rem);
-  }
-
-  .nav__hamburger.active :nth-child(2) {
-    opacity: 0;
-  }
-
-  .nav__hamburger.active :nth-child(3) {
-    transform: rotate(-45deg) translate(0.45rem, -0.1875rem);
-  }
 }

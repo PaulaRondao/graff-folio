@@ -7,7 +7,6 @@
 html {
   font-size: 18px;
   line-height: 27px;
-  overflow-x: hidden;
 }
 
 body {
@@ -18,7 +17,6 @@ body {
   font-family: 'Verdana, Arial', sans-serif;
   color: #EDE8E3;
   background-color: #1E1E1E;
-  overflow-x: hidden;
 }
 
 h1,
@@ -34,25 +32,15 @@ a {
 }
 
 h1 {
-  font-size: 2.986rem;
   font-weight: 700;
-  line-height: 2.4rem;
+  line-height: 3rem;
   text-transform: uppercase;
-  margin-bottom: 16px;
 }
 
 h2 {
-  font-size: 2.488rem;
   font-weight: 700;
   line-height: 2.625rem;
   text-transform: uppercase;
-
-  & span {
-    font-size: 1.438rem;
-    font-weight: 400;
-    line-height: 2.156rem;
-    text-transform: lowercase;
-  }
 }
 
 h3 {
@@ -63,7 +51,7 @@ h3 {
 }
 
 p {
-  font-size: 1.125rem;
+  font-size: 1rem;
   font-weight: 400;
   line-height: 1.688rem;
 }
@@ -72,6 +60,21 @@ a {
   text-decoration: none;
   line-height: 1.5rem;
   color: #EDE8E3;
+  cursor: pointer;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+span {
+  font-size: 1.438rem;
+  font-weight: 400;
+  line-height: 2.156rem;
+  text-transform: lowercase;
 }
 
 ul {
@@ -87,10 +90,6 @@ img {
   /* Préfixe pour IE */
   transform: scale(1);
   /* Propriété standard */
-}
-
-.container {
-  padding: 0px 12px;
 }
 
 /* footer */
