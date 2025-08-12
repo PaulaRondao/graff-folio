@@ -22,7 +22,7 @@ header {
 }
 
 #burger-button {
-  position: fixed;
+  position: absolute;
   top: 1rem;
   right: 1rem;
   z-index: 2000;
@@ -102,7 +102,6 @@ header {
   display: block;
 }
 
-/* --- VERSION DESKTOP --- */
 @media screen and (min-width: 1172px) {
   #burger-button {
     display: none;

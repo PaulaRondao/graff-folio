@@ -1,53 +1,97 @@
-.home-section-presentation {
-  display: flex;
-  padding-top: 3rem;
-  padding-bottom: 7rem;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
+h1 {
+  margin-bottom: 25px;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .container {
   margin: 0 auto;
   padding: 0 2rem;
   position: relative;
+  max-width: 100%;
 }
 
-.home-section-header {
+.home-hero {
+  display: flex;
+  padding-top: 3rem;
+  padding-bottom: 7rem;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  min-width: 0;
+}
+
+.home-hero .intro-header {
   text-align: center;
   margin-bottom: 60px;
 }
 
-.presentation {
+.home-hero .intro-content {
   display: flex;
   flex-direction: column;
   gap: 20px;
-  margin-bottom: 40px;
+  margin-bottom: 70px;
 }
 
-.presentation .presentation-wrapper {
-  /* margin-bottom: 20px; */
-}
-
-h1 {
-  margin-bottom: 45px;
-  font-size: 2.986rem;
-  margin-right: auto;
-  margin-left: auto;
-}
-
-h2 {
-  font-size: 2rem;
+.home-hero .intro-content .artist-bio h2 {
   margin-bottom: 20px;
   margin-right: auto;
   margin-left: auto;
   text-align: center;
 }
 
+.home-hero .container .project-image-wrapper {
+  max-width: 90%;
+}
+
+.home-hero .container .project-image-wrapper img {
+  max-width: 100%;
+  height: auto;
+}
+
+.home-hero .container .project-description {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-top: 20px;
+  max-width: 90%;
+}
+
+.home-hero .container.masonry {
+  gap: 90px;
+  display: flex;
+  flex-direction: column;
+}
+
+.home-section.testimonies,
+.home-section.contact {
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 64px;
+}
+
+.home-section.testimonies .rectangle {
+  width: 300px;
+  height: 40px;
+  background-color: white;
+}
+
+.home-section.contact .container p:first-child {
+  text-transform: uppercase;
+  margin-bottom: 16px;
+}
+
+.home-section.contact .container p:nth-child(even) {
+  margin-bottom: 24px;
+}
+
+/* img, button */
+
 img {
-  width: 100%;
-  /* object-fit: cover; */
-  /* object-position: center; */
+  margin: 0 auto;
+  height: auto;
+  max-width: 100%;
 }
 
 button {
@@ -56,16 +100,27 @@ button {
   border-color: #EDE8E3;
   border-radius: 5px;
   color: #EDE8E3;
+  font-weight: bold;
   max-width: 200px;
 }
 
-.button-group {
+.btn:hover {
+  background-color: #EDE8E3;
+  color: #1E1E1E;
+}
+
+.btn-home {
   display: inline-flex;
   justify-content: end;
 }
 
+.btn-secondary {
+  display: inline-flex;
+  justify-content: start;
+}
+
 @media screen and (min-width: 1172px) {
-  .home-section-presentation {
+  .home-hero {
     padding-top: 4rem;
   }
 
@@ -73,15 +128,58 @@ button {
     max-width: 70vw;
   }
 
-  .home-section-header {
+  .home-hero .intro-header {
     margin-bottom: 90px;
   }
 
-  .container {}
+
 }
 
 @media screen and (min-width: 991px) {
+  h1 {
+    margin-bottom: 45px;
+  }
+
   .container {
-    max-width: 90vw;
+    max-width: 80vw;
+  }
+
+  .container .artist-intro {
+    max-width: 60vw;
+  }
+
+  .container.masonry .project-item {
+    display: flex;
+  }
+
+  .container .project-item.even {
+    flex-direction: row;
+  }
+
+  .container .project-item.odd {
+    flex-direction: row-reverse;
+  }
+
+  .container .project-item.even .project-description {
+    margin: 0px 0px 0px 40px;
+  }
+
+  .container .project-item.odd .project-description {
+    margin: 0px 40px 0px 0px;
+  }
+
+  .container .project-item.odd .project-description p,
+  .container .project-item.even .project-description p {
+    overflow-wrap: break-word;
+    word-break: break-word;
+    max-width: 40vw;
+  }
+
+  .home-hero .container .project-image-wrapper {
+    flex: 0 0 300px;
+  }
+
+  .home-hero .container .project-description {
+    flex: 1 1 65%;
   }
 }

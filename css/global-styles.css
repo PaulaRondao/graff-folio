@@ -11,12 +11,15 @@ html {
 
 body {
   max-width: 1920px;
+  overflow-x: hidden;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
   font-family: 'Verdana, Arial', sans-serif;
   color: #EDE8E3;
   background-color: #1E1E1E;
+  overflow-wrap: break-word;
+  word-break: break-word;
 }
 
 h1,
@@ -32,12 +35,14 @@ a {
 }
 
 h1 {
+  font-size: 2.5rem;
   font-weight: 700;
-  line-height: 3rem;
+  line-height: 2.5rem;
   text-transform: uppercase;
 }
 
 h2 {
+  font-size: 1.75rem;
   font-weight: 700;
   line-height: 2.625rem;
   text-transform: uppercase;
@@ -92,6 +97,13 @@ img {
   /* Propriété standard */
 }
 
+img,
+video,
+iframe {
+  max-width: 100%;
+  height: auto;
+}
+
 /* footer */
 
 footer {
@@ -105,7 +117,7 @@ footer a {
   color: #1E1E1E;
 }
 
-.contentInfo {
+.content-info {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -113,16 +125,16 @@ footer a {
   padding-top: 20px;
 }
 
-.contentInfo .contact {
+.content-info .contact-info {
   display: flex;
   min-width: 300px;
 }
 
-.contentInfo .contact .content {
+.content-info .contact-info .content {
   text-align: center;
 }
 
-.contentInfo .contact .content .follow__link {
+.content-info .contact-info .content .follow-link {
   display: flex;
   -moz-box-pack: center;
   -moz-box-align: center;
@@ -134,7 +146,7 @@ footer a {
   font-size: 15px;
 }
 
-.contentInfo .content__info {
+.content-info .content-info-list {
   display: flex;
   flex-direction: column;
   justify-content: left;
@@ -144,15 +156,25 @@ footer a {
   padding: 10px 0;
 }
 
-.contentInfo .content__info li {
+.content-info .conten-info-list li {
   padding: 4px 0;
 }
 
-.contentInfo .content__info a {
+.content-info .conten-info-list a {
   text-decoration: underline;
 }
 
-.contentInfo .content__info p {
+.content-info .conten-info-list p {
   font-size: 14px;
   text-align: right;
+}
+
+@media screen and (min-width: 991px) {
+  h1 {
+    font-size: 2.986rem;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
 }
