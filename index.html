@@ -34,11 +34,11 @@
             <ul>
               <li><a href="index.html" aria-current="page" class="active">ACCUEIL</a></li>
               <li><a href="portfolio.html">PORTFOLIO</a></li>
-              <li><a href="portfolio.html">PROJETS</a></li>
-              <li><a href="#exposition">EXPOSITIONS / PRESS</a></li>
-              <li><a href="#festival">FESTIVALS</a></li>
-              <li><a href="#about">À PROPOS</a></li>
-              <li><a href="#contact">CONTACT</a></li>
+              <li><a href="projets.html">PROJETS</a></li>
+              <li><a href="exposition.html">EXPOSITIONS / PRESS</a></li>
+              <li><a href="performances.html">PERFORMANCES</a></li>
+              <li><a href="about.html">À PROPOS</a></li>
+              <li><a href="contact.html">CONTACT</a></li>
             </ul>
           </div>
         </nav>
@@ -64,8 +64,8 @@
               diversifié au fil des années pour y intégrer divers éléments comme du décor ou des personnages issus de la
               nature qui l’entoure ou des séries qui ont bercés sont enfance...</p>
           </div>
-          <div class="btn-home">
-            <button class="btn btn-primary">Me découvrir</button>
+          <div class="link-home">
+            <a class="link link-primary">Me découvrir</a>
           </div>
         </div>
       </div>
@@ -78,8 +78,8 @@
             <h2>Portfolio</h2>
             <p>Lorem ipsum dolor sit amet consectetur. Rhoncus vestibulum duis nulla lacus. Turpis id amet egestas
               aliquam elementum gravida phasellus nibh feugiat. </p>
-            <div class="btn-home btn-secondary">
-              <button class="btn">Voir plus</button>
+            <div class="link-home link-secondary">
+              <a href="portfolio.html" class="link" aria-label="voir le portfolio">Voir plus</a>
             </div>
           </div>
         </li>
@@ -91,8 +91,8 @@
             <h2>Projets</h2>
             <p>Lorem ipsum dolor sit amet consectetur. Rhoncus vestibulum duis nulla lacus. Turpis id amet egestas
               aliquam elementum gravida phasellus nibh feugiat. </p>
-            <div class="btn-home btn-secondary">
-              <button class="btn">Voir plus</button>
+            <div class="link-home link-secondary">
+              <a href="projets.html" class="link" aria-label="voir les projets">Voir plus</a>
             </div>
           </div>
         </li>
@@ -104,8 +104,8 @@
             <h2>Expositions / Press</h2>
             <p>Lorem ipsum dolor sit amet consectetur. Rhoncus vestibulum duis nulla lacus. Turpis id amet egestas
               aliquam elementum gravida phasellus nibh feugiat. </p>
-            <div class="btn-home btn-secondary">
-              <button class="btn">Voir plus</button>
+            <div class="link-home link-secondary">
+              <a href="expositions.html" class="link" aria-label="voir expositions et press">Voir plus</a>
             </div>
           </div>
         </li>
@@ -117,8 +117,8 @@
             <h2>Performances artistiques</h2>
             <p>Lorem ipsum dolor sit amet consectetur. Rhoncus vestibulum duis nulla lacus. Turpis id amet egestas
               aliquam elementum gravida phasellus nibh feugiat. </p>
-            <div class="btn-home btn-secondary">
-              <button class="btn">Voir plus</button>
+            <div class="link-home link-secondary">
+              <a href="performances.html" aria-label="voir performances artistiques" class="link">Voir plus</a>
             </div>
           </div>
         </li>
@@ -134,10 +134,10 @@
       <div class="container">
         <p>Une idée, un projet, une bière</p>
         <p>Sur Saintes....</p>
-        <div class="btn-home">
-          <button class="btn">
+        <div class="link-home">
+          <a href="contact.html" class="link">
             Contactez-moi
-          </button>
+          </a>
         </div>
       </div>
     </section>
@@ -171,24 +171,5 @@
     </div>
   </footer>
 </body>
-<script type="text/javascript">
-  function shuffleArray(array) {
-    for (let i = array.length - 1; i > 0; i--) {
-      const j = Math.floor(Math.random() * (i + 1));
-      [array[i], array[j]] = [array[j], array[i]];
-    }
-  }
-
-  document.addEventListener("DOMContentLoaded", function () {
-    const logos = Array.from(document.querySelectorAll('.scoop-logo'));
-    shuffleArray(logos);
-
-    const list = document.querySelector('.cooperatives-list');
-    logos.forEach(logo => {
-      list.appendChild(logo);
-    });
-  });
-
-</script>
 
 </html>
