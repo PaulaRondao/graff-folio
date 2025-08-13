@@ -109,64 +109,67 @@ iframe {
 footer {
   background-color: #EDE8E3;
   color: #1E1E1E;
-  font-size: 1rem;
-  letter-spacing: 0.00938em;
 }
 
-footer a {
+.content-info-wrapper {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin: auto;
+  padding-top: 20px;
+  gap: 20px;
+}
+
+.content-info-wrapper a {
   color: #1E1E1E;
 }
 
-.content-info {
+.content-info-wrapper .contact-info {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
-  margin: auto;
-  padding-top: 20px;
+  margin-top: 20px;
+  gap: 24px;
+  align-items: center;
+  padding-bottom: 10px;
+  border-bottom: 0.5px solid #1E1E1E;
 }
 
-.content-info .contact-info {
-  display: flex;
-  min-width: 300px;
-}
-
-.content-info .contact-info .content {
+.content-info-wrapper .contact-info .content {
   text-align: center;
 }
 
-.content-info .contact-info .content .follow-link {
+.content-info-wrapper .contact-info .content .follow-link {
   display: flex;
   -moz-box-pack: center;
   -moz-box-align: center;
-  margin-bottom: 40px;
-  min-width: 300px;
   align-items: center;
-  justify-content: center;
   text-transform: uppercase;
-  font-size: 15px;
+  font-size: 1rem;
 }
+
+.content-info-wrapper .contact-info .content .follow-link img {
+  margin-left: 16px;
+}
+
 
 .content-info .content-info-list {
-  display: flex;
-  flex-direction: column;
-  justify-content: left;
-  /* margin: auto; */
-  font-size: medium;
-  font-weight: 400;
   padding: 10px 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
 }
 
-.content-info .conten-info-list li {
+.content-info .content-info-list li {
   padding: 4px 0;
 }
 
-.content-info .conten-info-list a {
+.content-info .content-info-list a {
   text-decoration: underline;
+  font-size: 14px;
 }
 
-.content-info .conten-info-list p {
+.content-info .content-info-list p {
   font-size: 14px;
-  text-align: right;
 }
 
 @media screen and (min-width: 991px) {
@@ -176,5 +179,13 @@ footer a {
 
   h2 {
     font-size: 2rem;
+  }
+
+  .contact-info {
+    justify-content: space-around;
+  }
+
+  .content-info .content-info-list {
+    justify-content: space-around;
   }
 }

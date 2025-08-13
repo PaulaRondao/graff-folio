@@ -62,7 +62,7 @@ header {
   margin: 1.5rem 0;
 }
 
-#menu .header-menu li:hover {
+#menu .header-menu li .active {
   background-color: #EDE8E3;
   color: #1E1E1E;
   border-radius: 5px;
@@ -120,16 +120,22 @@ header {
     display: flex;
     justify-content: center;
     gap: 2rem;
-    border: 1px solid;
+    border: 2px solid;
     border-radius: 5px;
     border-color: #EDE8E3;
     width: fit-content;
     margin: 0 auto;
-    padding: 0.2rem;
+    padding: 0.3rem;
   }
 
   #menu .header-menu li {
     margin: 0;
+    border: 1px solid #4e4e4e;
+    border-radius: 5px;
   }
 
+  #menu .header-menu li:hover {
+    border: 1px solid #EDE8E3;
+    border-radius: 5px;
+  }
 }
