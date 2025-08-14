@@ -15,6 +15,8 @@ body {
 .expositions-block {
   margin: 0 auto 60px;
   display: inline-block;
+  padding: 0 32px;
+  max-width: 100%;
 }
 
 .expositions-list {
