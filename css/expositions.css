@@ -1,0 +1,23 @@
+body {
+  text-align: center;
+}
+
+.hero {
+  margin: 48px auto 48px;
+  max-width: 100%;
+}
+
+.header {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.expositions-block {
+  margin: 0 auto 60px;
+  display: inline-block;
+}
+
+.expositions-list {
+  text-align: left;
+  padding: 10px 0px;
+}
