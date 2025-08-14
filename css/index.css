@@ -10,7 +10,7 @@ h1 {
 
 .home-hero {
   display: flex;
-  margin: 48px auto 112px;
+  margin: 60px auto 112px;
   align-items: center;
   justify-content: center;
   flex-direction: column;
@@ -121,10 +121,6 @@ img {
 }
 
 @media screen and (min-width: 1260px) {
-  .home-hero {
-    padding-top: 4rem;
-  }
-
   .container {
     max-width: 70vw;
   }
@@ -132,8 +128,6 @@ img {
   .home-hero .intro-header {
     margin-bottom: 90px;
   }
-
-
 }
 
 @media screen and (min-width: 991px) {

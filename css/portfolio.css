@@ -4,7 +4,7 @@ h2 {
 }
 
 .hero {
-  margin: 48px auto 0px;
+  margin: 60px auto 0px;
   max-width: 100%;
 }
 
@@ -19,8 +19,7 @@ h2 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 70vw;
-  gap: 30px;
+  width: 85vw;
 }
 
 .header .intro h1 {
@@ -40,6 +39,7 @@ h2 {
   padding: 0px;
   max-width: 1280px;
   display: grid;
+  padding: 0 6px;
 }
 
 @media screen and (min-width: 1260px) {
@@ -47,6 +47,7 @@ h2 {
     display: flex;
     justify-content: space-evenly;
     flex-direction: row;
+    gap: 30px;
   }
 
   .header .intro {
@@ -63,6 +64,7 @@ h2 {
     display: flex;
     justify-content: space-around;
     flex-direction: row;
+    gap: 30px;
   }
 
   .header .intro {
