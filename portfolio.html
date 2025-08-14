@@ -47,26 +47,51 @@
   </header>
   <main role="main">
     <div class="hero">
-      <div class="container">
-        <div class="header">
-          <img src="assets/img/Rectangle 135.jpg" alt="" width="417" height="400">
-          <div class="intro">
-            <h1>Portfolio</h1>
-            <p>Lorem ipsum dolor sit amet consectetur. Rhoncus vestibulum duis nulla lacus. Turpis id amet egestas
-              aliquam elementum gravida phasellus nibh feugiat. </p>
-          </div>
+      <header class="header">
+        <img src="assets/img/Rectangle 135.jpg" alt="" width="400" height="400">
+        <div class="intro">
+          <h1>Portfolio</h1>
+          <p>Lorem ipsum dolor sit amet consectetur. Rhoncus vestibulum duis nulla lacus. Turpis id amet egestas
+            aliquam elementum gravida phasellus nibh feugiat. </p>
         </div>
-      </div>
+      </header>
     </div>
-    <div class="container portfolio">
-      <div>
-        <h2>Liste de graff perso</h2>
-      </div>
-      <div class="photo-list"></div>
+    <div class="product-header">
+      <h2>Liste de graff perso</h2>
     </div>
+    <ul class="gallery-grid">
+      <li class="gallery-image">
+        <img src="assets/img/Rectangle 130.jpg" alt="" width="400" height="400">
+      </li>
+      <li class="gallery-image">
+        <img src="assets/img/Rectangle 131.jpg" alt="" width="400" height="400">
+      </li>
+      <li class="gallery-image">
+        <img src="assets/img/Rectangle 132.jpg" alt="" width="400" height="400">
+        </div>
+      </li>
+      <li class="gallery-image">
+        <img src="assets/img/Rectangle 133.jpg" alt="" width="400" height="400">
+      </li>
+      <li class="gallery-image">
+        <img src="assets/img/Rectangle 134.jpg" alt="" width="400" height="400">
+      </li>
+      <li class="gallery-image">
+        <img src="assets/img/Rectangle 136.jpg" alt="" width="400" height="400">
+      </li>
+      <li class="gallery-image">
+        <img src="assets/img/Rectangle 137.jpg" alt="" width="400" height="400">
+      </li>
+      <li class="gallery-image">
+        <img src="assets/img/Rectangle 138.jpg" alt="" width="400" height="400">
+      </li>
+      <li class="gallery-image">
+        <img src="assets/img/Rectangle 139.jpg" alt="" width="400" height="400">
+      </li>
+    </ul>
   </main>
   <footer role="contentinfo">
-    <div class="container content-info-wrapper">
+    <div class="content-info-wrapper">
       <div class="contact-info">
         <div class="logo">
           <img class="logo-easy" src="assets/img/logo/EASY.svg" alt="" width="36" height="34">
@@ -78,19 +103,17 @@
           </a>
         </div>
       </div>
-      <div class="content-info">
-        <ul class="content-info-list">
-          <li>
-            <a href="">Plan du site</a>
-          </li>
-          <li>
-            <a href="">Mentions Légales</a>
-          </li>
-          <li>
-            <p>2025 | website by Paula Rondao</p>
-          </li>
-        </ul>
-      </div>
+      <ul class="content-info-list">
+        <li>
+          <a href="">Plan du site</a>
+        </li>
+        <li>
+          <a href="">Mentions Légales</a>
+        </li>
+        <li>
+          <p>2025 | website by Paula Rondao</p>
+        </li>
+      </ul>
     </div>
   </footer>
 </body>
@@ -103,12 +126,12 @@
   }
 
   document.addEventListener("DOMContentLoaded", function () {
-    const logos = Array.from(document.querySelectorAll('.scoop-logo'));
-    shuffleArray(logos);
+    const images = Array.from(document.querySelectorAll('.gallery-image'));
+    shuffleArray(images);
 
-    const list = document.querySelector('.cooperatives-list');
-    logos.forEach(logo => {
-      list.appendChild(logo);
+    const list = document.querySelector('.gallery-grid');
+    images.forEach(image => {
+      list.appendChild(image);
     });
   });
 
