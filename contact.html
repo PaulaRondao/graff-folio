@@ -15,7 +15,7 @@
   <!-- <link rel="icon" type="image/x-icon" href=""> -->
   <link rel="stylesheet" type="text/css" href="css/global-styles.css">
   <link rel="stylesheet" type="text/css" href="css/navbar.css">
-  <link rel="stylesheet" type="text/css" href="css/portfolio.css">
+  <link rel="stylesheet" type="text/css" href="css/contact.css">
   <script src="script.js" defer></script>
 </head>
 
@@ -33,12 +33,12 @@
           <div class="header-menu">
             <ul>
               <li><a href="index.html">ACCUEIL</a></li>
-              <li><a href="portfolio.html" aria-current="page" class="active">PORTFOLIO</a></li>
+              <li><a href="portfolio.html">PORTFOLIO</a></li>
               <li><a href="projets.html">PROJETS</a></li>
               <li><a href="expositions.html">EXPOSITIONS / PRESS</a></li>
               <li><a href="performances.html">PERFORMANCES</a></li>
               <li><a href="about.html">À PROPOS</a></li>
-              <li><a href="contact.html">CONTACT</a></li>
+              <li><a href="contact.html" aria-current="page" class="active">CONTACT</a></li>
             </ul>
           </div>
         </nav>
@@ -48,47 +48,20 @@
   <main role="main">
     <div class="hero">
       <header class="header">
-        <img src="assets/img/Rectangle 135.jpg" alt="" width="350" height="350">
-        <div class="intro">
-          <h1>Portfolio</h1>
-          <p>Lorem ipsum dolor sit amet consectetur. Rhoncus vestibulum duis nulla lacus. Turpis id amet egestas
-            aliquam elementum gravida phasellus nibh feugiat. </p>
-        </div>
+        <h1>Thibault Lemaire</h1>
       </header>
     </div>
-    <div class="product-header">
-      <h2>Liste de graff perso</h2>
+    <div class="contact-wrapper">
+      <p>Parlez-moi de votre projet et je serais ravie d’y mettre mon coeur et ma vision pour votre idée !</p>
+      <div class="email">
+        <img src="assets/icons/Message_light.svg" alt="" width="46" height="46" />
+        <a href="t.lemaire880@laposte.net ">t.lemaire880@laposte.net</a>
+      </div>
+      <div class="phone">
+        <img src="assets/icons/Phone_light.svg" alt="" width="46" height="46" />
+        <p>06.0000000000</p>
+      </div>
     </div>
-    <ul class="gallery-grid">
-      <li class="gallery-image">
-        <img src="assets/img/Rectangle 130.jpg" alt="" width="400" height="400">
-      </li>
-      <li class="gallery-image">
-        <img src="assets/img/Rectangle 131.jpg" alt="" width="400" height="400">
-      </li>
-      <li class="gallery-image">
-        <img src="assets/img/Rectangle 132.jpg" alt="" width="400" height="400">
-        </div>
-      </li>
-      <li class="gallery-image">
-        <img src="assets/img/Rectangle 133.jpg" alt="" width="400" height="400">
-      </li>
-      <li class="gallery-image">
-        <img src="assets/img/Rectangle 134.jpg" alt="" width="400" height="400">
-      </li>
-      <li class="gallery-image">
-        <img src="assets/img/Rectangle 136.jpg" alt="" width="400" height="400">
-      </li>
-      <li class="gallery-image">
-        <img src="assets/img/Rectangle 137.jpg" alt="" width="400" height="400">
-      </li>
-      <li class="gallery-image">
-        <img src="assets/img/Rectangle 138.jpg" alt="" width="400" height="400">
-      </li>
-      <li class="gallery-image">
-        <img src="assets/img/Rectangle 139.jpg" alt="" width="400" height="400">
-      </li>
-    </ul>
   </main>
   <footer role="contentinfo">
     <div class="content-info-wrapper">
@@ -117,24 +90,5 @@
     </div>
   </footer>
 </body>
-<script type="text/javascript">
-  function shuffleArray(array) {
-    for (let i = array.length - 1; i > 0; i--) {
-      const j = Math.floor(Math.random() * (i + 1));
-      [array[i], array[j]] = [array[j], array[i]];
-    }
-  }
-
-  document.addEventListener("DOMContentLoaded", function () {
-    const images = Array.from(document.querySelectorAll('.gallery-image'));
-    shuffleArray(images);
-
-    const list = document.querySelector('.gallery-grid');
-    images.forEach(image => {
-      list.appendChild(image);
-    });
-  });
-
-</script>
 
 </html>
