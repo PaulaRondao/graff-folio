@@ -1,20 +1,16 @@
 h1 {
-  margin-bottom: 25px;
-  margin-right: auto;
-  margin-left: auto;
+  margin: 0px auto 25px;
 }
 
 .container {
   margin: 0 auto;
-  padding: 0 2rem;
-  position: relative;
+  padding: 0 32px;
   max-width: 100%;
 }
 
 .home-hero {
   display: flex;
-  padding-top: 3rem;
-  padding-bottom: 7rem;
+  margin: 48px auto 112px;
   align-items: center;
   justify-content: center;
   flex-direction: column;
@@ -68,7 +64,10 @@ h1 {
   text-align: center;
   display: flex;
   flex-wrap: wrap;
-  margin-bottom: 64px;
+}
+
+.home-section.contact {
+  margin: 64px auto;
 }
 
 .home-section.testimonies .rectangle {

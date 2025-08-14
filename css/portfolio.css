@@ -4,19 +4,11 @@ h2 {
 }
 
 .hero {
-  padding-top: 3rem;
-  padding-bottom: 7rem;
-}
-
-.container {
-  margin: 0 auto;
-  padding: 0 2rem;
-  position: relative;
+  margin: 48px auto 0px;
   max-width: 100%;
 }
 
 .header {
-  margin: 0 auto;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -32,10 +24,23 @@ h2 {
 }
 
 .header .intro h1 {
-  padding-bottom: 20px;
+  margin-bottom: 20px;
 }
 
+.product-header {
+  margin: 100px auto 60px;
+}
 
+.gallery-grid {
+  grid-template-columns: repeat(3, 1fr);
+  gap: 6px;
+  overflow-y: auto;
+  list-style: none;
+  margin: 0 auto 20px;
+  padding: 0px;
+  max-width: 1280px;
+  display: grid;
+}
 
 @media screen and (min-width: 1260px) {
   .header {
@@ -46,6 +51,10 @@ h2 {
 
   .header .intro {
     width: 30vw;
+  }
+
+  .gallery-grid {
+    grid-template-columns: repeat(4, 1fr);
   }
 }
 
@@ -61,5 +70,9 @@ h2 {
     flex-direction: column;
     align-items: flex-start;
     width: 30vw;
+  }
+
+  .gallery-grid {
+    grid-template-columns: repeat(4, 1fr);
   }
 }
