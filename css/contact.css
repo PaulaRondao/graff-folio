@@ -1,6 +1,7 @@
 .hero {
   margin: 60px auto 60px;
   max-width: 100%;
+  padding: 0 32px;
 }
 
 .header {
@@ -11,7 +12,8 @@
 .contact-wrapper {
   margin: 0px auto 110px;
   text-align: center;
-  width: 30vw;
+  max-width: 100%;
+  padding: 0 32px;
 }
 
 .contact-wrapper p {
@@ -25,4 +27,16 @@
   align-items: center;
   margin-bottom: 40px;
   gap: 16px;
+}
+
+@media screen and (min-width: 1260px) {
+  .contact-wrapper {
+    width: 40vw;
+  }
+}
+
+@media screen and (min-width: 991px) {
+  .contact-wrapper {
+    width: 40vw;
+  }
 }
