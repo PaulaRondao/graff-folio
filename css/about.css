@@ -1,0 +1,114 @@
+.hero {
+  margin: 60px auto 0px;
+  max-width: 100%;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 32px;
+}
+
+.header .overlap-group .a {
+  display: none;
+}
+
+.title-wrapper {
+  width: 80vw;
+}
+
+.title-wrapper h1 {
+  border-top: 1px solid #EDE8E3;
+  border-bottom: 1px solid #EDE8E3;
+  padding: 10px;
+  font-size: 2rem;
+  text-align: center;
+}
+
+.description {
+  margin-top: 40px;
+}
+
+.hero .propos {
+  display: none;
+}
+
+.presentation {
+  padding: 0 32px;
+  margin: 80px auto;
+  max-width: 100%;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+
+@media screen and (min-width: 1260px) {
+  .hero {
+    position: relative;
+    width: 1440px;
+    height: 1300px;
+  }
+
+  .hero .header {
+    position: absolute;
+    width: 1408px;
+    height: 1025px;
+    top: 90px;
+    left: 0;
+  }
+
+  .hero .overlap-group {
+    position: absolute;
+    width: 1408px;
+    height: 1025px;
+    top: 0;
+    left: 0;
+  }
+
+  .hero .title-wrapper {
+    position: absolute;
+    top: 0;
+    left: 700px;
+    font-weight: 400;
+    color: #ffffff;
+    font-size: 25px;
+    letter-spacing: 0;
+    line-height: 50px;
+    white-space: nowrap;
+    width: 43vw;
+  }
+
+  .title-wrapper h1 {
+    text-align: flex-start;
+  }
+
+  .header .overlap-group .a {
+    display: block;
+  }
+
+  .hero .description {
+    position: absolute;
+    width: 528px;
+    top: 77px;
+    left: 730px;
+  }
+
+  .hero .propos {
+    display: block;
+    position: absolute;
+    width: 320px;
+    top: 928px;
+    left: 780px;
+    white-space: nowrap;
+  }
+
+  .hero .propos p {
+    font-weight: 400;
+    font-size: 90px;
+    letter-spacing: 0;
+    line-height: 130px;
+  }
+}
