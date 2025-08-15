@@ -1,0 +1,153 @@
+h2 {
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.hero {
+  margin: 60px auto 0px;
+  max-width: 100%;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 60px;
+}
+
+.header .intro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 85vw;
+}
+
+.header .intro h1 {
+  margin-bottom: 20px;
+}
+
+.product-header {
+  margin: 100px auto 60px;
+}
+
+.frame {
+  margin: 60px auto;
+  padding: 0 20px 0 20px;
+}
+
+.project-item {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #EDE8E3;
+  padding: 15px 6px;
+}
+
+.project-item p {
+  font-weight: bold;
+}
+
+.project-item span {
+  font-size: 0.875rem;
+  line-height: 2.156rem;
+  text-transform: capitalize;
+}
+
+.project-item .wrapper {
+  display: flex;
+  gap: 16px;
+}
+
+.project-item .number {
+  font-size: 1.5rem;
+}
+
+.project-item .city {
+  font-weight: lighter;
+}
+
+.project-item .year {
+  font-weight: lighter;
+}
+
+.project-description {
+  font-size: small;
+}
+
+.project-item img,
+.project-item .year {
+  display: none;
+}
+
+@media screen and (min-width: 1260px) {
+  .header {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    gap: 30px;
+  }
+
+  .header .intro {
+    width: 30vw;
+  }
+
+  .project-item {
+    justify-content: space-between;
+    border-bottom: none;
+  }
+
+  .project-item .wrapper {
+    display: flex;
+    gap: 40px;
+  }
+
+  .project-description {
+    display: inline-flex;
+    justify-content: space-between;
+    flex-direction: nowrap row;
+    border-bottom: 2px solid #EDE8E3;
+    padding: 15px 6px;
+    gap: 100px;
+  }
+
+  .project-item img,
+  .project-item .year {
+    display: inline-flex;
+  }
+
+}
+
+@media screen and (min-width: 991px) {
+  .header {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    gap: 30px;
+  }
+
+  .header .intro {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 30vw;
+  }
+
+  .project-item {
+    justify-content: space-between;
+    border-bottom: none;
+  }
+
+  .project-description {
+    display: inline-flex;
+    justify-content: space-between;
+    border-bottom: 2px solid #EDE8E3;
+    padding: 15px 6px;
+    width: 65vw;
+  }
+
+
+  .project-item img,
+  .project-item .year {
+    display: inline-flex;
+  }
+
+}
