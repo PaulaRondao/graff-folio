@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Thibault Lemaire, artiste graffeur passionné
+  </title>
+  <meta name="description" content="Thibault Lemaire, artiste graffeur passionné">
+  <meta name="author" content="Thibault Lemaire">
+  <meta property="og:title" content="Thibault Lemaire, artiste graffeur passionné">
+  <meta property="og:description" content="Thibault Lemaire, artiste graffeur passionné">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="">
+  <!-- <link rel="icon" type="image/x-icon" href=""> -->
+  <link rel="stylesheet" type="text/css" href="css/global-styles.css">
+  <link rel="stylesheet" type="text/css" href="css/navbar.css">
+  <link rel="stylesheet" type="text/css" href="css/about.css">
+  <script src="script.js" defer></script>
+</head>
+
+<body class="no-scroll">
+  <header role="banner">
+    <div class="site-header">
+      <div class="site-header-container">
+        <button id="burger-button" aria-expanded="false" onclick="collapse()">
+          <img class="navigation-image icon-burger menu-collapsed" src="assets/icons/menu-burger.svg" width="36px"
+            height="36px" alt="Menu de navigation">
+          <img class="navigation-image icon-close menu-collapsed" src="assets/icons/close.svg" width="36px"
+            height="36px" alt="Fermer le menu de navigation">
+        </button>
+        <nav role="navigation" id="menu" class="menu-collapsed" aria-label="navigation principale">
+          <div class="header-menu">
+            <ul>
+              <li><a href="index.html">ACCUEIL</a></li>
+              <li><a href="portfolio.html">PORTFOLIO</a></li>
+              <li><a href="projets.html">PROJETS</a></li>
+              <li><a href="expositions.html">EXPOSITIONS / PRESS</a></li>
+              <li><a href="performances.html">PERFORMANCES</a></li>
+              <li><a href="about.html" aria-current="page" class="active">À PROPOS</a></li>
+              <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </div>
+  </header>
+  <main role="main">
+    <!-- <div class="hero">
+      <header class="header">
+        <img src="assets/img/Rectangle 135.jpg" alt="" width="350" height="350">
+        <div class="intro">
+          <h1>Portfolio</h1>
+          <p>Lorem ipsum dolor sit amet consectetur. Rhoncus vestibulum duis nulla lacus. Turpis id amet egestas
+            aliquam elementum gravida phasellus nibh feugiat. </p>
+        </div>
+      </header>
+    </div>
+    <div class="product-header">
+      <h2>Liste de graff perso</h2>
+    </div> -->
+    <div class="hero">
+      <div class="header">
+        <div class="overlap-group">
+          <img class="a" src="assets/icons/A.svg" />
+          <div class="title-wrapper">
+            <h1>A PROPOS</h1>
+          </div>
+        </div>
+        <p class="description">
+          Artiste passionne, il a a cœur de transmettre son engagement pour sa discipline.<br />Membre actif du
+          collectif VEC, des associations La Sainte Coulure et Home Street Home, il pose ses<br />peintures sur de
+          nombreux murs en France et en Europe.
+        </p>
+        <div class="propos">
+          <p>
+            PROPOS
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="presentation">
+      <h2>
+        Thibault Lemaire
+      </h2>
+      <img src="assets/img/Rectangle-profil.jpg" alt="" width="400" height="400" />
+    </div>
+  </main>
+  <footer role="contentinfo">
+    <div class="content-info-wrapper">
+      <div class="contact-info">
+        <div class="logo">
+          <img class="logo-easy" src="assets/img/logo/EASY.svg" alt="" width="36" height="34">
+        </div>
+        <div class="content">
+          <a href="" class="follow-link">
+            suivez-moi sur
+            <img class="icon-instagram" src="assets/img/logo/instagram.svg" alt="" width="36" height="34">
+          </a>
+        </div>
+      </div>
+      <ul class="content-info-list">
+        <li>
+          <a href="">Plan du site</a>
+        </li>
+        <li>
+          <a href="">Mentions Légales</a>
+        </li>
+        <li>
+          <p>2025 | website by Paula Rondao</p>
+        </li>
+      </ul>
+    </div>
+  </footer>
+</body>
+<script type="text/javascript">
+  function shuffleArray(array) {
+    for (let i = array.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [array[i], array[j]] = [array[j], array[i]];
+    }
+  }
+
+  document.addEventListener("DOMContentLoaded", function () {
+    const images = Array.from(document.querySelectorAll('.gallery-image'));
+    shuffleArray(images);
+
+    const list = document.querySelector('.gallery-grid');
+    images.forEach(image => {
+      list.appendChild(image);
+    });
+  });
+
+</script>
+
+</html>
