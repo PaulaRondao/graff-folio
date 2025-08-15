@@ -15,7 +15,7 @@
   <!-- <link rel="icon" type="image/x-icon" href=""> -->
   <link rel="stylesheet" type="text/css" href="css/global-styles.css">
   <link rel="stylesheet" type="text/css" href="css/navbar.css">
-  <link rel="stylesheet" type="text/css" href="css/about.css">
+  <link rel="stylesheet" type="text/css" href="css/projets.css">
   <script src="script.js" defer></script>
 </head>
 
@@ -34,10 +34,10 @@
             <ul>
               <li><a href="index.html">ACCUEIL</a></li>
               <li><a href="portfolio.html">PORTFOLIO</a></li>
-              <li><a href="projets.html">PROJETS</a></li>
+              <li><a href="projets.html" aria-current="page" class="active">PROJETS</a></li>
               <li><a href="expositions.html">EXPOSITIONS / PRESS</a></li>
               <li><a href="performances.html">PERFORMANCES</a></li>
-              <li><a href="about.html" aria-current="page" class="active">À PROPOS</a></li>
+              <li><a href="about.html">À PROPOS</a></li>
               <li><a href="contact.html">CONTACT</a></li>
             </ul>
           </div>
@@ -47,30 +47,63 @@
   </header>
   <main role="main">
     <div class="hero">
-      <div class="header">
-        <div class="overlap-group">
-          <img class="a" src="assets/icons/A.svg" />
-          <div class="title-wrapper">
-            <h1>A PROPOS</h1>
-          </div>
+      <header class="header">
+        <img src="assets/img/Rectangle 135.jpg" alt="" width="350" height="350">
+        <div class="intro">
+          <h1>Projets</h1>
+          <p>Lorem ipsum dolor sit amet consectetur. Rhoncus vestibulum duis nulla lacus. Turpis id amet egestas
+            aliquam elementum gravida phasellus nibh feugiat. </p>
         </div>
-        <p class="description">
-          Artiste passionne, il a a cœur de transmettre son engagement pour sa discipline.<br />Membre actif du
-          collectif VEC, des associations La Sainte Coulure et Home Street Home, il pose ses<br />peintures sur de
-          nombreux murs en France et en Europe.
-        </p>
-        <div class="propos">
-          <p>
-            PROPOS
-          </p>
-        </div>
-      </div>
+      </header>
     </div>
-    <div class="presentation">
-      <h2>
-        Thibault Lemaire
-      </h2>
-      <img src="assets/img/Rectangle-profil.jpg" alt="" width="400" height="400" />
+    <div class="product-header">
+      <h2>Sélection de projets</h2>
+    </div>
+    <div class="frame">
+      <ul class="project-list">
+        <li class="project-item">
+          <a href="les-jardins-de-st-fiacre.html">
+            <div class="project-description">
+              <div class="wrapper">
+                <span class="number">.01&nbsp;</span>
+                <p class="p">
+                  Les jardins de St Fiacre,<span class="city">&nbsp;Saintes</span>
+                </p>
+              </div>
+              <span class="year">&nbsp;Année : 2023</span>
+            </div>
+          </a>
+          <img src="assets/img/project.jpg" alt="" width="300" height="220" />
+        </li>
+        <li class="project-item">
+          <a href="">
+            <div class="project-description">
+              <div class="wrapper">
+                <span class="number">.02&nbsp;</span>
+                <p class="p">
+                  Front de mer,<span class="city">&nbsp;Les Sables d’Olonne</span>
+                </p>
+              </div>
+              <span class="year">&nbsp;Année : 2022</span>
+            </div>
+          </a>
+          <img src="assets/img/project2.jpg" alt="" width="300" height="220" />
+        </li>
+        <li class="project-item">
+          <a href="">
+            <div class="project-description">
+              <div class="wrapper">
+                <span class="number">.03&nbsp;</span>
+                <p class="p">
+                  Inconnu,<span class="city">&nbsp;Saintes</span>
+                </p>
+              </div>
+              <span class="year">&nbsp;Année : 2022</span>
+            </div>
+          </a>
+          <img src="assets/img/project2.jpg" alt="" width="300" height="220" />
+        </li>
+      </ul>
     </div>
   </main>
   <footer role="contentinfo">
