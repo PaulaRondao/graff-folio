@@ -15,7 +15,6 @@
   <!-- <link rel="icon" type="image/x-icon" href=""> -->
   <link rel="stylesheet" type="text/css" href="css/global-styles.css">
   <link rel="stylesheet" type="text/css" href="css/navbar.css">
-  <link rel="stylesheet" type="text/css" href="css/portfolio.css">
   <script src="script.js" defer></script>
 </head>
 
@@ -33,7 +32,7 @@
           <div class="header-menu">
             <ul>
               <li><a href="index.html">ACCUEIL</a></li>
-              <li><a href="portfolio.html" aria-current="page" class="active">PORTFOLIO</a></li>
+              <li><a href="portfolio.html">PORTFOLIO</a></li>
               <li><a href="projets.html">PROJETS</a></li>
               <li><a href="expositions.html">EXPOSITIONS / PRESS</a></li>
               <li><a href="performances.html">PERFORMANCES</a></li>
@@ -46,49 +45,21 @@
     </div>
   </header>
   <main role="main">
-    <div class="hero">
-      <header class="header">
-        <img src="assets/img/Rectangle 135.jpg" alt="" width="350" height="350">
-        <div class="intro">
-          <h1>Portfolio</h1>
-          <p>Lorem ipsum dolor sit amet consectetur. Rhoncus vestibulum duis nulla lacus. Turpis id amet egestas
-            aliquam elementum gravida phasellus nibh feugiat. </p>
-        </div>
-      </header>
+    <div class="mentions-legales">
+      <div class="header-title">
+        <h1>Mentions Légales</h1>
+      </div>
+      <div class="content">
+        <h2>Informations juridiques</h2>
+        <p>A compléter</p>
+        <h2>Hébergeur</h2>
+        <p></p>
+        <h2>Accès au site</h2>
+        <p></p>
+        <h2>Réserve juridique</h2>
+        <p></p>
+      </div>
     </div>
-    <div class="product-header">
-      <h2>Liste de graff perso</h2>
-    </div>
-    <ul class="gallery-grid">
-      <li class="gallery-image">
-        <img src="assets/img/Rectangle 130.jpg" alt="" width="400" height="400">
-      </li>
-      <li class="gallery-image">
-        <img src="assets/img/Rectangle 131.jpg" alt="" width="400" height="400">
-      </li>
-      <li class="gallery-image">
-        <img src="assets/img/Rectangle 132.jpg" alt="" width="400" height="400">
-        </div>
-      </li>
-      <li class="gallery-image">
-        <img src="assets/img/Rectangle 133.jpg" alt="" width="400" height="400">
-      </li>
-      <li class="gallery-image">
-        <img src="assets/img/Rectangle 134.jpg" alt="" width="400" height="400">
-      </li>
-      <li class="gallery-image">
-        <img src="assets/img/Rectangle 136.jpg" alt="" width="400" height="400">
-      </li>
-      <li class="gallery-image">
-        <img src="assets/img/Rectangle 137.jpg" alt="" width="400" height="400">
-      </li>
-      <li class="gallery-image">
-        <img src="assets/img/Rectangle 138.jpg" alt="" width="400" height="400">
-      </li>
-      <li class="gallery-image">
-        <img src="assets/img/Rectangle 139.jpg" alt="" width="400" height="400">
-      </li>
-    </ul>
   </main>
   <footer role="contentinfo">
     <div class="content-info-wrapper">
@@ -117,24 +88,5 @@
     </div>
   </footer>
 </body>
-<script type="text/javascript">
-  function shuffleArray(array) {
-    for (let i = array.length - 1; i > 0; i--) {
-      const j = Math.floor(Math.random() * (i + 1));
-      [array[i], array[j]] = [array[j], array[i]];
-    }
-  }
-
-  document.addEventListener("DOMContentLoaded", function () {
-    const images = Array.from(document.querySelectorAll('.gallery-image'));
-    shuffleArray(images);
-
-    const list = document.querySelector('.gallery-grid');
-    images.forEach(image => {
-      list.appendChild(image);
-    });
-  });
-
-</script>
 
 </html>

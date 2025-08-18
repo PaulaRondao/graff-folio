@@ -182,3 +182,49 @@ footer {
     justify-content: space-around;
   }
 }
+
+/* ----------- sitemap ----------- */
+
+.sitemap,
+.mentions-legales {
+  padding: 0px 32px;
+  margin: 60px auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.header-title {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.summary {
+  margin: 0 auto 60px;
+  gap: 25px;
+  display: grid;
+}
+
+.summary a {
+  text-decoration: underline;
+  letter-spacing: 0.5;
+  font-weight: lighter;
+}
+
+.summary .primary-page {
+  font-size: 1.5rem;
+
+}
+
+.summary .primary-page a:hover {
+  /* font-weight: bold; */
+}
+
+.summary .primary-page ul {
+  padding-left: 30px;
+}
+
+.summary .primary-page li {
+  font-size: 0.875rem;
+  padding-left: 12px;
+  list-style-type: circle;
+}
