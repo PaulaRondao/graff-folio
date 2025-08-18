@@ -1,0 +1,240 @@
+.single-project {
+  overflow: hidden;
+}
+
+.single-project .overlap-group {
+  display: grid;
+  width: 100%;
+  max-width: 1440px;
+  height: auto;
+  grid-template-areas: "stack";
+  position: relative;
+  overflow: hidden;
+}
+
+.single-project .rectangle,
+.single-project .div,
+.single-project .image-cover,
+.single-project .frame {
+  grid-area: stack;
+}
+
+.single-project .rectangle {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  display: block;
+}
+
+.single-project .div {
+  width: 100%;
+  height: 20%;
+  align-self: end;
+  border-radius: 0 0 20px 20px;
+  filter: blur(15px);
+  backdrop-filter: blur(10px) brightness(100%);
+  -webkit-backdrop-filter: blur(10px) brightness(100%);
+  background: linear-gradient(180deg, rgba(4, 4, 4, 0) 0%, rgba(0, 0, 0, 0.2) 100%);
+}
+
+.single-project .image-cover {
+  background-color: rgba(0, 0, 0, 0.63);
+  z-index: 10;
+}
+
+.single-project .rectangle img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.single-project .frame {
+  display: flex;
+  align-items: start;
+  justify-content: start;
+  padding: 20px;
+  z-index: 10000;
+  margin-top: 20px;
+}
+
+.single-project .frame a {
+  align-items: center;
+  display: inline-flex;
+  gap: 20px;
+}
+
+.project {
+  padding: 0 32px;
+  gap: 40px;
+  display: grid;
+  grid-template-columns: 1fr;
+  align-items: center;
+}
+
+.project-presentation {
+  margin-top: 40px;
+}
+
+.project-presentation .client-label {
+  margin-bottom: 30px;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.project-presentation .client-label p {
+  padding-left: 20px;
+}
+
+.project-presentation .client-label .line {
+  position: absolute;
+  height: 2px;
+  width: 90px;
+  background-color: #EDE8E3;
+  left: 0;
+  position: relative;
+}
+
+.project-presentation .client-name {
+  margin-bottom: 40px;
+}
+
+.project-presentation .client-name h1 {
+  margin-bottom: 20px;
+}
+
+.project-presentation .project-details {
+  display: flex;
+  gap: 80px;
+}
+
+.project-presentation .project-details .location,
+.project-presentation .project-details .year {
+  align-items: baseline;
+  display: inline-flex;
+  gap: 10px;
+}
+
+.project-navigation {
+  margin: 80px 0 40px;
+  padding: 0 32px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 40px;
+}
+
+.next-project,
+.previous-project {
+  display: flex;
+  gap: 60px;
+  padding: 10px 16px;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid #EDE8E3;
+  border-radius: 5px;
+  width: 315px;
+}
+
+.previous-subtitle,
+.next-subtitle {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.previous-subtitle .previous-line,
+.next-subtitle .next-line {
+  position: absolute;
+  height: 2px;
+  width: 20px;
+  background-color: #EDE8E3;
+  left: 0;
+  position: relative;
+}
+
+.previous-subtitle span,
+.next-subtitle span {
+  font-size: 0.75rem;
+  font-weight: 400;
+  position: relative;
+  text-transform: uppercase;
+}
+
+.previous-title p,
+.next-title p {
+  font-size: 0.875rem;
+  font-weight: bold;
+}
+
+@media screen and (min-width: 1260px) {
+  .project {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 6rem;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .project-presentation {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .project-image {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 12px;
+  }
+
+  .project-presentation .client-name p {
+    width: 45vw;
+  }
+
+  .project-navigation {
+    margin: 200px 0 40px;
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+@media screen and (min-width: 991px) {
+  .project {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 6rem;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .project-presentation {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .project-image {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 12px;
+  }
+
+  .project-presentation .client-name p {
+    width: 45vw;
+  }
+
+  .project-navigation {
+    margin: 200px 0 40px;
+    display: flex;
+    flex-direction: row;
+  }
+}
