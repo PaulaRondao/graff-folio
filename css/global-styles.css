@@ -17,7 +17,7 @@ body {
   flex-direction: column;
   font-family: 'Verdana, Arial', sans-serif;
   color: #EDE8E3;
-  background-color: #1E1E1E;
+  background-color: #121212;
   overflow-wrap: break-word;
   word-break: break-word;
 }
@@ -101,7 +101,7 @@ iframe {
 
 footer {
   box-sizing: inherit;
-  background-color: #EDE8E3;
+  background-color: #F5EFE1;
 }
 
 .content-info-wrapper {
@@ -227,4 +227,21 @@ footer {
   font-size: 0.875rem;
   padding-left: 12px;
   list-style-type: circle;
+}
+
+/* ----------- lien d'évitement ----------- */
+
+a.evitement {
+  display: inline-block;
+  color: #555;
+  background: #fff;
+  padding: .5em;
+  position: absolute;
+  top: 100px;
+  left: -99999rem;
+  z-index: 100;
+}
+
+a.evitement:focus {
+  left: 0;
 }
