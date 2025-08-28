@@ -18,7 +18,15 @@
 </head>
 
 <body class="no-scroll">
-  <main>
+  <ul role="navigation" aria-label="Navigation rapide">
+    <li>
+      <a class="evitement" href="#content">Aller au contenu</a>
+    </li>
+    <li>
+      <a class="evitement" href="#footer">Aller au footer</a>
+    </li>
+  </ul>
+  <main role="main" id="content">
     <div class="single-project">
       <div class="overlap-group">
         <img class="rectangle" src="assets/img/single-project.jpg" alt="" width="1440" height="650" />
@@ -89,7 +97,7 @@
       </div>
     </div>
   </main>
-  <footer role="contentinfo">
+  <footer role="contentinfo" id="footer">
     <div class="content-info-wrapper">
       <div class="contact-info">
         <div class="logo">
